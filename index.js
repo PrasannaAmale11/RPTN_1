@@ -7,6 +7,21 @@ const navLogo = document.querySelector('#navbar__logo');
 const submit = document.querySelector('#submit');
 
 
+document.addEventListener("DOMContentLoaded", function() {
+      // Show the loading screen
+      document.getElementById("loading-screen").style.display = "flex";
+      
+      // Simulate a delay for loading content (replace this with your actual data fetching or any other asynchronous operation)
+      setTimeout(function() {
+        // Hide the loading screen
+        document.getElementById("loading-screen").style.display = "none";
+        
+        // Show the main content
+        document.getElementById("main-content").style.display = "block";
+      }, 2000); // Adjust the delay time as needed
+    });
+    
+
 
 AOS.init();
 // Display mobile menu
